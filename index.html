@@ -5,27 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bela Novak Sthetic & Spa | Reserva tu cita</title>
     
-    <!-- Fuentes: Playfair Display para elegancia, Montserrat para legibilidad moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Iconos (FontAwesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Configuración alineada a la paleta visual de Instagram -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            lightest: '#FFF6F8', // Fondo súper claro
-                            light: '#FCE7F0',    // Rosa pastel (cintillos)
-                            DEFAULT: '#F4A3B8',  // Rosa principal de los posts
-                            dark: '#A66B7C',     // Rosa oscuro/malva para textos
-                            text: '#4A4A4A'      // Gris oscuro para párrafos (más suave que negro)
+                            lightest: '#FFF6F8', 
+                            light: '#FCE7F0',    
+                            DEFAULT: '#F4A3B8',  
+                            dark: '#A66B7C',     
+                            text: '#4A4A4A'      
                         },
                         whatsapp: {
                             DEFAULT: '#25D366',
@@ -43,17 +37,13 @@
 </head>
 <body class="font-sans text-brand-text bg-brand-lightest antialiased">
 
-    <!-- Navegación y Logo simulado -->
+    <!-- Navegación -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            
-            <!-- Logo estilo Bela Novak -->
             <div class="bg-white border border-brand-light rounded-[40px] px-5 py-2 shadow-sm text-center flex flex-col justify-center items-center">
                 <span class="font-serif text-lg md:text-xl font-bold text-gray-800 tracking-widest uppercase leading-none">Bela Novak</span>
                 <span class="text-[0.55rem] md:text-[0.65rem] font-sans tracking-[0.25em] text-gray-500 font-medium mt-1 uppercase">Sthetic & Spa</span>
             </div>
-
-            <!-- RECUERDA CAMBIAR EL NÚMERO DE WHATSAPP -->
             <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20vengo%20de%20la%20página%20web%20y%20quiero%20reservar%20una%20cita" target="_blank" class="text-whatsapp font-semibold text-sm md:text-base flex items-center gap-2 hover:text-whatsapp-hover transition">
                 <i class="fab fa-whatsapp text-2xl"></i> <span class="hidden md:inline">Reservar Cita</span>
             </a>
@@ -62,9 +52,7 @@
 
     <!-- Hero Section -->
     <header class="relative bg-cover bg-center h-[85vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
-        <!-- Overlay rosa pastel translúcido para que el texto resalte pero mantenga la estética -->
         <div class="absolute inset-0 bg-brand-lightest bg-opacity-70"></div> 
-        
         <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h1 class="font-serif text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4 uppercase tracking-wide">
                 Refina tu perfil y <br><span class="text-brand-DEFAULT">mejora tu contorno</span>
@@ -72,15 +60,13 @@
             <p class="text-lg md:text-xl mb-8 font-light text-gray-700 max-w-2xl mx-auto">
                 Experimenta la belleza integral. Tratamientos estéticos sin cirugía para una piel más suave, luminosa y un rostro definido.
             </p>
-            
-            <!-- RECUERDA CAMBIAR EL NÚMERO DE WHATSAPP -->
             <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20agendar%20mi%20valoración%20estética" target="_blank" class="inline-flex items-center gap-3 bg-brand-DEFAULT hover:bg-brand-dark text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg transform transition hover:scale-105 uppercase tracking-wider text-sm">
                 <i class="fab fa-whatsapp text-xl"></i> Agenda tu valoración
             </a>
         </div>
     </header>
 
-    <!-- Franja de Confianza (Estilo feed de Instagram) -->
+    <!-- Franja -->
     <section class="bg-brand-DEFAULT py-6 text-white">
         <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center uppercase tracking-widest text-xs md:text-sm font-semibold">
             <div>✨ Piel Nueva y Luminosa</div>
@@ -89,101 +75,141 @@
         </div>
     </section>
 
-    <!-- Servicios Destacados (Basados en las imágenes) -->
-    <section class="py-20 max-w-6xl mx-auto px-4 bg-white">
-        <div class="text-center mb-16">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4 uppercase tracking-widest">Nuestros Servicios</h2>
-            <p class="text-gray-500 max-w-2xl mx-auto font-light">Procedimientos vanguardistas enfocados en resultados reales para tu rostro y piel.</p>
+    <!-- SERVICIOS BÁSICOS -->
+    <section class="py-16 max-w-6xl mx-auto px-4 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-3xl font-bold text-gray-800 mb-4 uppercase tracking-widest">Nuestros Servicios</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Servicio 1: Dermaplaning -->
-            <div class="bg-brand-lightest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-light">
-                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dermaplaning" class="w-full h-56 object-cover">
-                <div class="p-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Dermaplaning -->
+            <div class="bg-brand-lightest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-light flex flex-col">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dermaplaning" class="w-full h-48 object-cover">
+                <div class="p-6 text-center flex-grow">
                     <h3 class="font-serif font-bold text-xl mb-3 text-brand-dark uppercase tracking-wide">Dermaplaning</h3>
-                    <p class="text-gray-600 text-sm mb-6 font-light leading-relaxed">El secreto para una piel más suave y luminosa. Renovación facial profunda que elimina células muertas.</p>
-                    <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20información%20sobre%20Dermaplaning" class="text-brand-DEFAULT font-semibold text-sm uppercase tracking-wider hover:text-brand-dark transition">Reservar <i class="fas fa-arrow-right ml-1"></i></a>
+                    <p class="text-gray-600 text-sm mb-6 font-light">Renovación facial profunda que elimina células muertas para una piel más suave.</p>
                 </div>
             </div>
-            
-            <!-- Servicio 2: Lipopapada -->
-            <div class="bg-brand-lightest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-light">
-                <img src="https://images.unsplash.com/photo-1505052924194-e8b9816da0ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lipopapada Estética" class="w-full h-56 object-cover">
-                <div class="p-8 text-center">
-                    <h3 class="font-serif font-bold text-xl mb-3 text-brand-dark uppercase tracking-wide">Lipopapada Estética</h3>
-                    <p class="text-gray-600 text-sm mb-6 font-light leading-relaxed">Libera tu perfil sin cirugía. Define tu rostro, mejora tu contorno y luce espectacular en cada ángulo.</p>
-                    <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20información%20sobre%20Lipopapada" class="text-brand-DEFAULT font-semibold text-sm uppercase tracking-wider hover:text-brand-dark transition">Reservar <i class="fas fa-arrow-right ml-1"></i></a>
-                </div>
-            </div>
-            
-            <!-- Servicio 3: Limpieza Facial -->
-            <div class="bg-brand-lightest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-light">
-                <img src="https://images.unsplash.com/photo-1615396892556-9d3326176373?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Limpieza Facial" class="w-full h-56 object-cover">
-                <div class="p-8 text-center">
+            <!-- Limpieza Facial -->
+            <div class="bg-brand-lightest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-brand-light flex flex-col">
+                <img src="https://images.unsplash.com/photo-1615396892556-9d3326176373?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Limpieza Facial" class="w-full h-48 object-cover">
+                <div class="p-6 text-center flex-grow">
                     <h3 class="font-serif font-bold text-xl mb-3 text-brand-dark uppercase tracking-wide">Limpieza Facial</h3>
-                    <p class="text-gray-600 text-sm mb-6 font-light leading-relaxed">¿Por qué es importante? Una limpieza profunda ayuda a mantener tu piel sana, limpia y libre de impurezas.</p>
-                    <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20agendar%20una%20Limpieza%20Facial" class="text-brand-DEFAULT font-semibold text-sm uppercase tracking-wider hover:text-brand-dark transition">Reservar <i class="fas fa-arrow-right ml-1"></i></a>
+                    <p class="text-gray-600 text-sm mb-6 font-light">Una limpieza profunda ayuda a mantener tu piel sana, limpia y libre de impurezas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Autoridad y Confianza -->
-    <section class="bg-brand-light py-16">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="font-serif text-2xl md:text-3xl font-bold text-gray-800 mb-10 uppercase tracking-widest">Bela Novak: Tu Oasis de Bienestar</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="w-12 h-12 bg-brand-light text-brand-DEFAULT rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                        <i class="fas fa-search"></i>
+    <!-- EL "BOOM" DE LA LIPOPAPADA CON CASOS REALES -->
+    <section class="py-20 bg-[#f9f9f9] border-y border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <span class="bg-brand-DEFAULT text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm mb-4 inline-block">Tratamiento Estrella</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4 uppercase tracking-widest mt-4">Lipopapada Estética</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Resultados 100% reales. Mira cómo logramos definir el perfil y eliminar grasa localizada sin necesidad de entrar a un quirófano.</p>
+            </div>
+
+            <!-- Grid de Casos Clínicos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Caso 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <!-- Collage estilo Clínico (Sin gap, unidos con línea blanca) -->
+                    <div class="flex h-72 w-full relative">
+                        <!-- Foto Antes -->
+                        <div class="w-1/2 h-full relative border-r-2 border-white">
+                            <div class="absolute top-3 left-3 bg-white/90 text-gray-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm z-10 flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-red-400"></span> Antes
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Antes" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Foto Después -->
+                        <div class="w-1/2 h-full relative">
+                            <div class="absolute top-3 right-3 bg-white/90 text-brand-dark text-[11px] font-bold px-3 py-1 rounded-full shadow-sm z-10 flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-green-400"></span> 3ra Sesión
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Después" class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <h4 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Evaluación Experta</h4>
-                    <p class="text-gray-500 text-sm font-light">Diagnóstico personalizado para garantizar que el tratamiento sea el ideal para tu tipo de piel.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="w-12 h-12 bg-brand-light text-brand-DEFAULT rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                        <i class="fas fa-shield-alt"></i>
+                    
+                    <!-- Testimonio estilo WhatsApp -->
+                    <div class="p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-sm">AM</div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-sm">Andrea M.</p>
+                                <p class="text-xs text-gray-400 flex items-center gap-1"><i class="fas fa-check-circle text-whatsapp"></i> Paciente verificada</p>
+                            </div>
+                            <div class="ml-auto text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">"Niñas, de verdad mil gracias 😍. Me acomplejaba muchísimo mi perfil en las fotos y trataba de esconder la papada. Apenas voy en la tercera sesión y el cambio es brutal, mi cara se ve súper perfilada."</p>
                     </div>
-                    <h4 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Protocolos Seguros</h4>
-                    <p class="text-gray-500 text-sm font-light">Máximos estándares de bioseguridad en cada procedimiento para cuidar de tu salud.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <div class="w-12 h-12 bg-brand-light text-brand-DEFAULT rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-                        <i class="fas fa-star"></i>
+
+                <!-- Caso 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <!-- Collage estilo Clínico -->
+                    <div class="flex h-72 w-full relative">
+                        <!-- Foto Antes -->
+                        <div class="w-1/2 h-full relative border-r-2 border-white">
+                            <div class="absolute top-3 left-3 bg-white/90 text-gray-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm z-10 flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-red-400"></span> Antes
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Antes" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Foto Después -->
+                        <div class="w-1/2 h-full relative">
+                            <div class="absolute top-3 right-3 bg-white/90 text-brand-dark text-[11px] font-bold px-3 py-1 rounded-full shadow-sm z-10 flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-green-400"></span> 5ta Sesión
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Después" class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <h4 class="font-bold text-gray-800 mb-2 uppercase text-sm tracking-wide">Resultados Reales</h4>
-                    <p class="text-gray-500 text-sm font-light">Técnicas avanzadas no invasivas que marcan un antes y un después en tu belleza natural.</p>
+                    
+                    <!-- Testimonio estilo WhatsApp -->
+                    <div class="p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold text-sm">VC</div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-sm">Valeria C.</p>
+                                <p class="text-xs text-gray-400 flex items-center gap-1"><i class="fas fa-check-circle text-whatsapp"></i> Paciente verificada</p>
+                            </div>
+                            <div class="ml-auto text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">"Quedé matada con el resultado. Tenía miedo de hacerme una cirugía y encontré esta opción con ustedes. No dolió nada y desde la primera semana mi familia notó que me veía más delgada."</p>
+                    </div>
                 </div>
+            </div>
+
+            <!-- CTA Exclusivo para Lipopapada -->
+            <div class="text-center mt-12">
+                <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20vi%20los%20casos%20de%20Lipopapada%20y%20quiero%20agendar%20mi%20valoraci%C3%B3n" target="_blank" class="inline-flex items-center gap-3 bg-brand-dark hover:bg-gray-900 text-white font-bold py-4 px-10 rounded-full text-lg shadow-xl transform transition hover:-translate-y-1 uppercase tracking-widest">
+                    ✨ Quiero evaluar mi caso
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final (WhatsApp) -->
-    <section class="bg-white py-20 text-center border-t border-gray-100">
+    <!-- CTA Final -->
+    <section class="bg-white py-20 text-center">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-6 uppercase tracking-wider">Agenda tu cita en Bela Novak</h2>
-            <p class="text-gray-500 mb-10 font-light text-lg">Nuestros espacios son personalizados. Contáctanos por WhatsApp para separar tu lugar y empezar tu transformación.</p>
-            
-            <!-- RECUERDA CAMBIAR EL NÚMERO DE WHATSAPP -->
+            <h2 class="font-serif text-3xl font-bold text-gray-800 mb-6 uppercase tracking-wider">¿Lista para tu transformación?</h2>
+            <p class="text-gray-500 mb-10 font-light text-lg">Nuestros cupos semanales son limitados. Contáctanos por WhatsApp para separar tu lugar.</p>
             <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20reservar%20mi%20cita%20ahora" target="_blank" class="inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-hover text-white font-semibold py-4 px-10 rounded-full text-lg shadow-xl transform transition hover:-translate-y-1 w-full md:w-auto">
                 <i class="fab fa-whatsapp text-3xl"></i> Chat directo en WhatsApp
             </a>
         </div>
     </section>
 
-    <!-- Footer Minimalista -->
     <footer class="bg-gray-50 text-gray-400 py-10 text-center text-sm border-t border-gray-200">
         <div class="mb-4">
             <span class="font-serif text-xl font-bold text-gray-800 tracking-widest uppercase">Bela Novak</span>
         </div>
         <p class="font-light">&copy; 2024 Bela Novak Sthetic & Spa. Todos los derechos reservados.</p>
-        <p class="mt-4">
-            <a href="https://www.instagram.com/belanovak.sthetic/" target="_blank" class="text-brand-dark hover:text-brand-DEFAULT transition font-medium">
-                <i class="fab fa-instagram text-lg mr-1"></i> Visita nuestro Instagram
-            </a>
-        </p>
     </footer>
 
 </body>
