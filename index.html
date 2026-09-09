@@ -1,31 +1,77 @@
-<!-- SECCIÓN DE PRECIOS ACTUALIZADA -->
-<section class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-        
-        <!-- Tarjeta Única de Promoción Centrada -->
-        <div class="max-w-sm mx-auto relative bg-[#FFFCF8] border border-[#F2E3C6] rounded-2xl p-8 shadow-lg text-center transition hover:shadow-xl">
-            
-            <!-- Etiqueta Promo (Esquina superior derecha) -->
-            <div class="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-[#2D2D2D] text-white text-xs font-bold px-4 py-1.5 rounded-lg uppercase tracking-wider">
-                Promo
-            </div>
-            
-            <!-- Encabezado de la tarjeta -->
-            <h3 class="font-serif text-3xl font-bold text-[#D4AF37] mb-2">Happy Anniversary</h3>
-            <p class="text-gray-500 mb-8 font-light">Tratamiento intensivo completo.</p>
-            
-            <!-- Precio y Detalles -->
-            <div class="text-4xl font-bold text-[#333333] mb-2">6 Sesiones</div>
-            <div class="text-4xl font-bold text-[#D4AF37] mb-8">$850.000</div>
-            
-            <!-- Alerta de Escasez -->
-            <p class="text-[#E53935] font-bold text-sm tracking-widest uppercase mb-6">¡CUPOS LIMITADOS!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipopapada Sin Cirugía - Belanovak Sthetic</title>
+    <!-- Tailwind CSS para el diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Paleta de colores suave y estética */
+        .bg-nude { background-color: #faf8f6; } 
+        .text-brown { color: #4a3f35; }
+        .btn-accent { background-color: #c79673; color: white; }
+        .btn-accent:hover { background-color: #b0805e; }
+    </style>
+</head>
+<body class="bg-nude text-gray-800 font-sans antialiased">
 
-            <!-- Botón de WhatsApp integrado a la tarjeta (Opcional, puedes quitarlo si ya tienes uno debajo) -->
-            <a href="https://wa.me/NUMERODEWHATSAPPAQUI?text=Hola,%20quiero%20la%20promo%20Happy%20Anniversary%20de%206%20sesiones%20por%20$850.000" target="_blank" class="block w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-3 px-4 rounded-full transition shadow-md">
-                <i class="fab fa-whatsapp text-lg mr-1"></i> Separar mi cupo
+    <!-- HERO SECTION (Banner principal con Video) -->
+    <section class="relative w-full h-[90vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-black">
+        
+        <!-- Video de fondo (Asegúrate de que el nombre coincida exactamente con el repositorio) -->
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover opacity-50">
+            <source src="reel lipopapada.mp4" type="video/mp4">
+        </video>
+
+        <!-- Contenido sobre el video -->
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-light text-white mb-2 tracking-wide font-serif">Lipopapada</h1>
+            <p class="text-4xl md:text-5xl text-white italic mb-10 font-serif">Sin cirugía!</p>
+            
+            <p class="text-xl text-gray-200 mb-10 max-w-lg mx-auto font-light">
+                Redefine tu rostro con nuestro tratamiento estrella. Resultados visibles y seguros.
+            </p>
+            
+            <!-- Llamado a la acción principal -->
+            <a href="#agendar" class="btn-accent text-lg font-semibold py-4 px-10 rounded-full shadow-2xl transform transition hover:scale-105 inline-block">
+                Agendar Valoración Ahora
             </a>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- SECCIÓN DE OFERTA (Imagen con Precios Ajustados) -->
+    <section class="py-16 px-4 w-full flex flex-col items-center">
+        
+        <!-- Contenedor de la Imagen Reciente -->
+        <div class="w-full max-w-2xl bg-white p-2 md:p-4 rounded-xl shadow-xl mb-12">
+            <!-- Imagen subida con los precios de $850.000 -->
+            <img src="lipopapadaanuncio.jpeg" alt="Promoción 6 Sesiones de Lipopapada" class="w-full h-auto rounded-lg">
+        </div>
+
+        <!-- SECCIÓN DE AGENDAMIENTO (Virtual o Presencial) -->
+        <div id="agendar" class="text-center w-full max-w-3xl bg-white p-8 md:p-12 rounded-2xl shadow-lg border-t-4 border-[#c79673]">
+            <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4 font-serif">Da el primer paso hoy</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Nuestros cupos para el descuento de aniversario son limitados. Elige cómo prefieres realizar tu valoración gratuita para asegurar tu precio especial de <strong>$850.000</strong>.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Botón Valoración Virtual -->
+                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=Hola,%20quiero%20aprovechar%20la%20promoción%20de%20Lipopapada.%20Deseo%20agendar%20una%20valoración%20VIRTUAL." target="_blank" class="btn-accent font-semibold py-4 px-6 rounded-lg shadow-md transition flex items-center justify-center text-lg w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    Valoración Virtual
+                </a>
+                
+                <!-- Botón Valoración Presencial -->
+                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=Hola,%20quiero%20aprovechar%20la%20promoción%20de%20Lipopapada.%20Deseo%20agendar%20una%20valoración%20PRESENCIAL." target="_blank" class="bg-gray-800 hover:bg-black text-white font-semibold py-4 px-6 rounded-lg shadow-md transition flex items-center justify-center text-lg w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    Valoración Presencial
+                </a>
+            </div>
+            <p class="text-sm text-gray-400 mt-6">* Aplican términos y condiciones. Válido hasta agotar cupos.</p>
+        </div>
+    </section>
+
+</body>
+</html>
